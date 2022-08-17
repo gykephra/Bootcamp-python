@@ -1,0 +1,16 @@
+.t1 th, .t2 td{
+	border: 1px solid black;
+}
+
+.d1{
+	border-width:1px ;
+	border-color:red ;
+	border-style:solid ;
+	color: red; 
+}
+
+.img{
+	border-width: 5px;
+	border-color: orange;
+	border-style: solid;
+}
