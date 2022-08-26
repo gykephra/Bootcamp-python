@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2nd landing page</title>
+	<style type="text/css">
+		.navbar {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+  		background-color: #095228;
+  		
+		}
+
+		.container{
+			display: grid;
+			grid-template-columns: repeat(9, 1fr);
+			grid-template-rows: repeat(20, 30px);
+			grid-column-gap: 20px;
+			background-image: url(img.jpg);
+			background-repeat: no-repeat;
+            background-size: 100%;
+		}
+
+		.txt{
+			color: white;
+			font-family: arial;
+			
+		}
+
+		.button{
+		padding: 10px 15px;
+        margin: 10px 4px;
+        color: white;
+        font-family: arial;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        background-color: #34C924;
+		}
+		.dwld{
+			grid-row: 3 / span 1;
+			grid-column: 4 / span 3;
+			font-family: arial;
+			color: white;
+		}
+		.f1{
+			grid-row: 6 / span 1;
+			grid-column: 4 / span 1;
+			font-family: arial;
+			color: white;
+		}
+		.f2{
+			grid-row: 6 / span 1;
+			grid-column: 5 / span 1;
+			font-family: arial;
+			color: white;}
+		.f3{
+			grid-row: 6 / span 1;
+			grid-column: 6 / span 1;
+			font-family: arial;
+			color: white;
+		}
+		.f4{
+			grid-row: 8 / span 1;
+			grid-column: 4 / span 1;
+			font-family: arial;
+			color: white;
+		}
+		.f5{
+			grid-row: 8 / span 1;
+			grid-column: 5 / span 1;
+			font-family: arial;
+			color: white;
+		}
+		.f6{
+			grid-row: 8 / span 1;
+			grid-column: 6 / span 1;
+			font-family: arial;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+		
+  			<h5 class="txt">UNBURDEN YOURSELF FROM THE WEIGHT FOR EMAIL OVERLOAD</h5>
+
+  			<span class="button">learn now</span>
+		
+	</nav><br>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="dwld"><center><h1>DOWNLOAD NOW</h1></center></div>
+			<form class="f1">
+				<label for="fname">FIRST NAME*</label><br>
+				<input type="text" id="fname" name="fname"><br>
+			</form>
+			<form class="f2">
+				<label for="lname">LAST NAME*</label>
+   				<input type="text" id="lname" name="lname"><br>
+			</form>
+			<form class="f3">
+				<label for="email">EMAIL()*</label>
+   				<input type="text" id="email" name="email">
+			</form>
+			<form class="f4">
+				<label for="phone">PHONE NUMBER*</label><br>
+				<input type="text" id="phone" name="phone"><br>
+			</form>
+			<form class="f5">
+				<label for="website">WEBSITE URL*</label>
+   				<input type="text" id="website" name="website"><br>
+			</form>
+			<form class="f6">
+				<label for="company">COMPANY NAME*</label>
+   				<input type="text" id="company" name="company">
+			</form>
+		</div>
+	</section>
+	
+</body>
+</html>
