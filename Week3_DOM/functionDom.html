@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    body {
+   margin : 20px
+}
+
+button {
+  text-align : center;
+  font-size : 15px;
+  font-weight: bold;
+  height : 50px;
+  height : 50px;
+}
+
+.outer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+
+.inner {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+  </style>
+</head>
+
+<body class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p><button type="button" class="btn btn-primary btn-lg" onclick="setTime()">setTimeout</button></p>
+      <p><button type="button" class="btn btn-success btn-lg" onclick="setInter()">setInterval</button></p>
+      <p><button type="button" class="btn btn-danger btn-lg" onclick="clearInter()">clearInterval</button></p>
+      
+      
+      
+      <p><button type="button" class="btn btn-warning btn-lg" onclick="myMove()">Click Me</button></p>
+      
+      
+      
+    </div>
+    <div class="col-md-6">
+      <div id='root'></div>
+    </div>
+ </div>
+  <script src="anim.js" charset="utf-8"></script>
+</body>
+
+<script type="text/javascript">
+  function setTime(){
+  setTimeout(function(){
+    alert('hello');
+  },3000)
+}
+
+let id;
+function setInter(){
+  let num = 0
+  id = setInterval(function(){
+    console.log(num);
+    num ++
+  },1000);
+}
+
+function clearInter(){
+  clearInterval(id);
+}
+
+let root = document.getElementById('root');
+
+let outer = document.createElement('div');
+let inner = document.createElement('div');
+outer.classList.add('outer');
+inner.classList.add('inner');
+inner.setAttribute('id','main');
+outer.appendChild(inner);
+root.appendChild(outer);
+
+function myMove() {
+  var elem = document.getElementById("main");
+  var pos = 0;
+  let id = setInterval(function() {
+    if (pos == 350) {
+      clearInterval(id);
+    }
+    else {
+      pos++;
+      elem.style.top = pos + "px";
+     /* elem.style.left ="0px";*/
+    }
+  }, 5);
+}
+</script>
+</html>
