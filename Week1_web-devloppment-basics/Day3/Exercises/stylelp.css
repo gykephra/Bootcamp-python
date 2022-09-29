@@ -1,0 +1,90 @@
+
+		*{
+  		box-sizing: border-box;
+		}
+
+		.container{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 85px 85px 85px 85px 85px 85px 85px;
+			grid-column-gap: 20px;
+
+			background-image: url(monde.png);
+			background-repeat: no-repeat;
+            background-size: 100%;
+		}
+		.tina{
+			grid-row: 4 / span 3;
+			grid-column: 1 / span 1;
+
+			display: grid;
+			grid-template-columns: 1;
+			grid-template-rows: 85px 85px 85px;
+			border: 2px solid #F3C4CF;
+		}
+		.corine{
+			grid-row: 5 / span 3;
+			grid-column: 2 / span 1;
+
+			display: grid;
+			grid-template-columns: 1;
+			grid-template-rows: 85px 85px 85px;
+			border: 2px solid #007FFF;
+		}
+		.chris{
+			grid-row: 4 / span 3;
+			grid-column: 3 / span 1;
+
+			display: grid;
+			grid-template-columns: 1;
+			grid-template-rows: 85px 85px 85px;
+			border: 2px solid #00E5FF;
+		}
+		.white1{
+			grid-row: 1 / span 2;
+			grid-column: 1 / span 1;
+			background-color: white;
+		}
+		.color1{
+			grid-row: 3 / span 1
+			grid-column: 1 / span 1;
+			background-color: #F3C4CF;
+		}
+		.white2{
+			grid-row: 1 / span 2;
+			grid-column: 1 / span 1;
+			background-color: white;
+		}
+		.color2{
+			grid-row: 3 / span 1
+			grid-column: 1 / span 1;
+			background-color: #007FFF;
+		}
+		.white3{
+			grid-row: 1 / span 2;
+			grid-column: 1 / span 1;
+			background-color: white;
+		}
+		.color3{
+			grid-row: 3 / span 1
+			grid-column: 1 / span 1;
+			background-color: #00E5FF;
+		}
+		.nbr1{
+			grid-row: 2 / span 1;
+			grid-column: 1 span 1;
+		}
+		.nbr2{
+			grid-row: 2 / span 1;
+			grid-column: 2 span 1;
+		}
+		.nbr2{
+			grid-row: 2 / span 1;
+			grid-column: 3 span 1;
+		}
+
+		/*@media only screen and (max-width: 620px) {
+  		/* For mobile phones: 
+  		.tina, .corine, .chris {
+   		 width: 100%;
+ 		 }*/

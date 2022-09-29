@@ -1,0 +1,17 @@
+
+		.container{
+			display: grid;
+			grid-template-columns: repeat(16, 1fr);
+			grid-template-rows: repeat(16, 1fr);
+			border: 1px solid black;
+		}
+		.orange{
+			border: 1px solid black;
+		}
+		.orangecl{
+			border: 1px solid black;
+		}
+		.marron{
+			border: 1px solid black;
+		}
+	
