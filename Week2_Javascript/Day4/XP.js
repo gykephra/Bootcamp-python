@@ -89,3 +89,5 @@ function myBill(){
 	}
 
 myBill();
+
+//Exercice5s
