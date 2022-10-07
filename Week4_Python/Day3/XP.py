@@ -77,7 +77,7 @@ print(disney_user_D)
 disney_user_D={users[i]: i for i in range(len(users)) if i in users}
 print(disney_user_D)
 
-disney_user_E={users[i]: i for i in range(len(users)) if i in users[0]=="m" or users[0]=="p"}
+disney_user_E={users[i]: i for i in range(len(users)) if  users[i][:1] == "M" or users[i][:1]== "P"}
 print(disney_user_E)
 
 
