@@ -13,16 +13,13 @@ tpl = (7)
 
 #Exercice 3 : Liste
 basket = ["Banana", "Apples", "Oranges", "Blueberries"];
-basket.remove("Banana")
-del basket[3]
-basket.append("Kiwi")
-basket.append("Apples")
-nbApple=0;
-for fruit in basket :
-    if "Apples" == fruit :
-        nbApple += 1
-print(nbApple)
-basket = []
+basket.pop(0)
+basket.pop()
+basket.append("kiwi")
+basket.insert(0,"Apples")
+occurrences = basket.count("Apples")
+    print(occurrences)
+basket.clear()
 print(basket)
 
 #Exercise4
@@ -43,10 +40,8 @@ for i in range(1,21):
         print(i)
 
 #Exercice6
-while(1) :
-    nom = input("Tapez votre nom ")
-    if nom.lower() == "ephraim" :
-        break
+while name != "Ephraim":
+name= input("what's your name : ")
 
 #Exercise7
 fruits = input("Tapez  votre/vos fruits préférés séparés par un espace")
