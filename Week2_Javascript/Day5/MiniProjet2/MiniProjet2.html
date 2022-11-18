@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        button {
+         width:100px;
+         height:75px;
+         margin-bottom: 2px;
+        }
+        .ovrw {
+         width:200px;
+         height:75px;
+        }
+
+        .gr {
+         background-color: green;
+        }
+
+        .orange {
+         background-color: orange;
+        }
+
+        .bl {
+         background-color: blue;
+        }
+
+        .rd {
+         background-color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="number(0);" class="gr">0</button>
+    <button type="button" name="button" onclick="number(1);" class="gr">1</button>
+    <button type="button" name="button" onclick="number(2);" class="gr">2</button>
+    <button type="button" name="button" onclick="number(3);" class="gr">3</button>
+    <br>
+    <button type="button" name="button" onclick="number(4);" class="gr">4</button>
+    <button type="button" name="button" onclick="number(5);" class="gr">5</button>
+    <button type="button" name="button" onclick="number(6);" class="gr">6</button>
+    <button type="button" name="button" onclick="number(7);" class="gr">7</button>
+    <br>
+    <button type="button" name="button" onclick="number(8);" class="gr">8</button>
+    <button type="button" name="button" onclick="number(9);" class="gr">9</button>
+    <button type="button" name="button" onclick="number('.');" class="gr">.</button>
+    <button type="button" name="button" onclick="operator('+');" class="orange">+</button>
+    <br>
+    <button type="button" name="button" onclick="operator('-');" class="orange">-</button>
+    <button type="button" name="button" onclick="operator('*');" class="orange">*</button>
+    <button type="button" name="button" onclick="operator('/');" class="orange">/</button>
+    <button type="button" name="button" onclick="equal();" class="orange">=</button>
+    <br>
+    <button type="button" name="button" onclick="reset();" class="ovrw bl">RESET</button>
+    <button type="button" name="button" onclick="clean()" class="ovrw rd">CLEAR</button>
+    <script src="MiniProjet2.js" charset="utf-8"></script>
+  </body>
+</html>

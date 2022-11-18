@@ -1,5 +1,5 @@
 //Exercise 1 
-//Partie I
+//Partie 1
 	function Verificateur(nombre) {
 		type = Number(nombre);
 		if (!type) {
@@ -38,7 +38,7 @@
 
 	}
 
-	//Partie II
+	//Partie 2
 	function Comparateur(userNumber,computerNumber) {
 		let i=0;
 		while(i!=4) {
