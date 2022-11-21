@@ -1,0 +1,24 @@
+{
+   "players": [
+      {
+         "Name": "Ephra",
+         "Age": "23",
+         "Strength": 20,
+         "Dexterity": 17,
+         "Constitution": 10,
+         "Intelligence": 20,
+         "Wisdom": 20,
+         "Charisma": 50
+      },
+      {
+         "Name": "suzan",
+         "Age": "22",
+         "Strength": 15,
+         "Dexterity": 15,
+         "Constitution": 17,
+         "Intelligence": 19,
+         "Wisdom": 21,
+         "Charisma": 40
+      }
+   ]
+}
